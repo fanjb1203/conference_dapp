@@ -1,3 +1,6 @@
+truffle用的是3.1.2，truffle serve启动后显示“Serving static assets in ./build on port 8080...”是正常，
+由于truffle3.1.2版本build不好使用，我直接把页面和js放在build下面
+
 ## Conference
 
 A simple Ethereum smart contract and lightwallet example.
