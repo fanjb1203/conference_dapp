@@ -2,7 +2,7 @@ var accounts, account,account1,account2;
 var myConferenceInstance;
 var Web3 = require('web3');
 var web3 = new Web3();
-var provider = new web3.providers.HttpProvider('http://192.168.9.147:8545');
+var provider = new web3.providers.HttpProvider('http://192.168.9.147:8545'); //根据自己的ip修改
 web3.setProvider(new web3.providers.HttpProvider('http://192.168.9.147:8545'));
 var Conference;
 $.ajax({
