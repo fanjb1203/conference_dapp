@@ -6,7 +6,7 @@ contract Ballot {
         uint weight; // 权重（即他可以投几票）
         bool voted;  //是否已经投过票
         address delegate; // 代表地址（他可以代表某个人进行投票）
-        uint vote;   // index of the voted proposal
+        uint vote;   // 当前投票的索引
     }
 
     // 投票的提案的构造体
