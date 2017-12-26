@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+<meta charset="utf-8">
+<title>Todo</title>
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="./app1.js"></script>
+</head>
+<body>
+<h2>蓝莲花的待办事项</h2>
+ <div ng-controller="TodoListController as todoList">
+   <span>{{todoList.remaining()}} of {{todoList.todos.length}} 未处理</span>
+   [<a href="">归档</a>]
+   <ul>
+     <li ng-repeat="todo in todoList.todos">
+       <label>
+         <input type="checkbox" ng-model="todo.done">
+         <span>{{todo.text}}</span>
+       </label>
+     </li>
+   </ul>
+   
+   <form ng-submit="todoList.addTodo()">
+      <input type="text" size="30" ng-model="todoList.todoText" placeholder="add new todo here">
+      <input type="submit" value="Add">
+   </form>
+ </div>
+</body>
+</html>

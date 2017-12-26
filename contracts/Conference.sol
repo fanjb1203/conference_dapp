@@ -15,7 +15,7 @@ contract Conference {
     numRegistrants = 0;
   }
   //买票
-  function buyTicket() public payable returns (bool success) {
+  function buyTicket() public payable returns(bool success) {
     if (numRegistrants >= quota) { return false; }
     registrantsPaid[msg.sender] = msg.value;
     numRegistrants++;
